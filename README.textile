@@ -1,0 +1,4 @@
+Sinatra-driven playground for exploring the CSS2 sliding-doors technique.
+
+http://www.alistapart.com/articles/slidingdoors/
+

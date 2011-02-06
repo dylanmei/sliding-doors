@@ -1,0 +1,212 @@
+
+
+/* BUTTONS
+
+
+
+*/
+button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0; padding: 0;
+  border: none; outline: none;
+  background: none;
+  cursor: pointer;
+  min-width: 130px;
+}
+
+button .wrap {
+  height: 38px;
+  padding: 0 15px 0 0;
+  background: transparent url('images/button-cap.png') no-repeat top right;
+}
+
+button .wrap span {
+  display: block;
+  height: 38px;
+  line-height: 36px;
+  padding: 0 0 0 15px;
+  background: transparent url('images/button-wrap.png') no-repeat 0 0;
+}
+
+/* TEXTFIELDS
+
+
+
+*/
+
+.text-wrap {
+  height: 31px;
+  padding: 0 10px 0 0;
+  background: transparent url('images/text-cap.png') no-repeat right 0;
+}
+
+.text-wrap>span {
+  display: block;
+  height: 31px;
+  line-height: 30px;
+  padding: 0 0 0 10px;
+  background: transparent url('images/text-wrap.png') no-repeat 0 0;
+}
+
+.text-wrap input { color: #333; }
+.text-wrap:hover input { color: #000; }
+
+.text-wrap input.watermark { color: #777; }
+.text-wrap input::-webkit-input-placeholder { color: #777; }
+
+.text-wrap:hover input.watermark { color: #333; }
+.text-wrap:hover input::-webkit-input-placeholder { color: #333; }
+
+.text-wrap.active { background-position: right -64px; }
+.text-wrap.active>span { background-position: 0 -64px; }
+
+.text-wrap.disabled { background-position: right -96px; }
+.text-wrap.disabled>span { background-position: 0 -96px; }
+.text-wrap.disabled input.watermark { color: #999; }
+.text-wrap.disabled input::-webkit-input-placeholder { color: #ccc; }
+
+.text-wrap.errors { background-position: right -128px; }
+.text-wrap.errors>span { background-position: 0 -128px; }
+.text-wrap.errors input { color: #300; }
+.text-wrap.errors input.watermark { color: #966; }
+.text-wrap.errors input::-webkit-input-placeholder { color: #966; }
+.text-wrap.errors:hover input.watermark { color: #633; }
+.text-wrap.errors:hover input::-webkit-input-placeholder { color: #633; }
+
+.text-wrap input {
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+  font-size: 13px;
+  height: 21px;
+  line-height: 16px;
+  margin: 0; padding: 0;
+}
+
+
+.touch .text-wrap input[type=text],
+.touch .text-wrap input[type=password] {
+  -webkit-appearance: none;
+}
+
+/* DEFINE FIXED WIDTHS FOR SPECIFIC TYPES
+   (do not put colors and layout details here)
+*/
+.text-wrap.quantity { width: 50px; }
+.text-wrap.card-number { width: 150px; }
+.text-wrap.card-code { width: 70px; }
+
+/* SELECTBOXES
+
+
+
+*/
+
+.select-wrap {
+  position: relative;
+  height: 31px;
+  padding: 0 24px 0 0;
+  background: transparent url('images/select-cap.png') no-repeat 100% 0;
+}
+
+.select-wrap span {
+  display: block;
+  height: 31px;
+  line-height: 30px;
+  padding: 0 0 0 24px;
+  background: transparent url('images/select-wrap.png') no-repeat 0 0;
+}
+
+.select-wrap label {
+  font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+  font-size: 13px;
+  height: 22px;
+  line-height: 22px;
+  margin: 0 0 0 -12px;
+  padding: 3px 0 0;
+}
+
+.select-wrap label { color: #333 }
+.select-wrap:hover label { color: #000; }
+.select-wrap label.watermark { color: #777; }
+.select-wrap:hover label.watermark { color: #333; }
+
+.select-wrap:hover { background-position: right -32px; }
+.select-wrap:hover span { background-position: 0 -32px; }
+
+.select-wrap.active { background-position: right -96px; }
+.select-wrap.active span { background-position: 0 -96px; }
+
+.select-wrap:hover.active { background-position: right -128px; }
+.select-wrap:hover.active span { background-position: 0 -128px; }
+
+.select-wrap.disabled { background-position: right -192px; }
+.select-wrap.disabled span { background-position: 0 -192px; }
+.select-wrap.disabled label { color: #999; }
+.select-wrap.disabled:hover label { color: #999; }
+
+.select-wrap.errors { background-position: right -224px; }
+.select-wrap.errors span { background-position: 0 -224px; }
+.select-wrap.errors:hover { background-position: right -256px; }
+.select-wrap.errors:hover span { background-position: 0 -256px; }
+.select-wrap.errors label { color: #300; }
+.select-wrap.errors label.watermark { color: #966; }
+.select-wrap.errors:hover label.watermark { color: #633; }
+
+.select-wrap select {
+  position: absolute;
+  left: 0; top: 0;
+  background: none;
+  border: none; outline: none;
+  margin: 0; padding: 0;
+  font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%; width: 100%;
+  line-height: 16px;
+  opacity: 0; filter:alpha(opacity:0);
+}
+
+.select-wrap option {
+  padding:  5px; font-size: 13px; background: #fff;
+}
+
+/* DEFINE FIXED WIDTHS FOR SPECIFIC TYPES
+   (do not put colors and layout details here)
+*/
+
+.select-wrap.state { width: 135px; }
+.select-wrap.month { width: 120px; }
+.select-wrap.day { width: 60px; }
+.select-wrap.year { width: 60px; }
+.select-wrap.relationship-type { width: 200px; }
+
+
+/* DATE FIELDS
+
+
+
+*/
+
+.date-wrap q {
+  float: left;
+  font-size: 15px;
+  color: #333;
+  line-height: 30px;
+  margin: 0 5px;
+}
+
+.date-wrap .month {
+  float: left;
+  width: 50px;
+}
+.date-wrap .day {
+  float: left;
+  width: 55px;
+}
+.date-wrap .year {
+  float: left;
+  width: 65px;
+}
