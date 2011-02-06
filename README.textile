@@ -1,4 +1,10 @@
-Sinatra-driven playground for exploring the CSS2 sliding-doors technique.
 
-http://www.alistapart.com/articles/slidingdoors/
+Sinatra-driven playground for exploring the CSS2 sliding-doors technique.
+http://sliding-doors.heroku.com
+
+References
+----------
+http://www.alistapart.com/articles/slidingdoors
+http://www.alistapart.com/articles/slidingdoors2
+http://kailoon.com/css-sliding-door-using-only-1-image
 
