@@ -1,10 +1,11 @@
+h3. Sliding Doors
 
 Sinatra-driven playground for exploring the CSS2 sliding-doors technique.
-http://sliding-doors.heroku.com
+__http://sliding-doors.heroku.com__
 
-References
-----------
-http://www.alistapart.com/articles/slidingdoors
-http://www.alistapart.com/articles/slidingdoors2
-http://kailoon.com/css-sliding-door-using-only-1-image
+h4. References
+
+* http://www.alistapart.com/articles/slidingdoors
+* http://www.alistapart.com/articles/slidingdoors2
+* http://kailoon.com/css-sliding-door-using-only-1-image
 
