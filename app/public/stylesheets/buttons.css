@@ -1,0 +1,46 @@
+
+/* BUTTONS
+
+
+*/
+
+button {
+  margin: 0; padding: 0;
+  border: none; outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+button.orange {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  height: 32px;
+  padding: 0 12px 0 0;
+  background: transparent url('images/orange-button-cap.png') no-repeat top right;
+}
+
+button.orange .wrap {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 0 0 12px;
+  background: transparent url('images/orange-button.png') no-repeat 0 0;
+}
+
+button.orange span {
+  display: block;
+  margin: 0 10px;
+  background: none;
+}
+
+button.orange:active span {
+  background: transparent url('images/orange-button-tap.png') no-repeat center center;
+}
+
+button.orange:disabled { cursor:default; background-position: -34px right; }
+button.orange:disabled .wrap { background-position: -34px left; }
+button.orange:disabled span { background: none; }
+
+button.orange-arrow .wrap { background-image: url('images/orange-button-with-arrow.png'); }
+button.orange-arrow span { margin-left: 28px; }
+

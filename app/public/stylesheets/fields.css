@@ -1,35 +1,5 @@
 
 
-/* BUTTONS
-
-
-
-*/
-button {
-  color: #fff;
-  font-weight: bold;
-  font-size: 14px;
-  margin: 0; padding: 0;
-  border: none; outline: none;
-  background: none;
-  cursor: pointer;
-  min-width: 130px;
-}
-
-button .wrap {
-  height: 38px;
-  padding: 0 15px 0 0;
-  background: transparent url('images/button-cap.png') no-repeat top right;
-}
-
-button .wrap span {
-  display: block;
-  height: 38px;
-  line-height: 36px;
-  padding: 0 0 0 15px;
-  background: transparent url('images/button-wrap.png') no-repeat 0 0;
-}
-
 /* TEXTFIELDS
 
 
