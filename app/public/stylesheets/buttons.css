@@ -4,43 +4,52 @@
 
 */
 
-button {
+.buttons {
+
+}
+
+.buttons button,
+.buttons .button {
+  float: left;
   margin: 0; padding: 0;
   border: none; outline: none;
   background: none;
   cursor: pointer;
+  overflow: visible;
 }
 
-button.orange {
+.buttons .orange .wrap {
   color: white;
   font-weight: bold;
   font-size: 14px;
   height: 32px;
   padding: 0 12px 0 0;
-  background: transparent url('images/orange-button-cap.png') no-repeat top right;
+  white-space: nowrap;
+  background: transparent url('images/orange-button-cap.png') no-repeat right top;
 }
 
-button.orange .wrap {
+.buttons .orange .cap {
   height: 32px;
-  line-height: 32px;
+  line-height: 30px;
   padding: 0 0 0 12px;
-  background: transparent url('images/orange-button.png') no-repeat 0 0;
+  background: transparent url('images/orange-button.png') no-repeat left top;
 }
 
-button.orange span {
+.buttons .orange span {
   display: block;
+  height: 32px;
   margin: 0 10px;
   background: none;
 }
 
-button.orange:active span {
+.buttons .orange:active span {
   background: transparent url('images/orange-button-tap.png') no-repeat center center;
 }
 
-button.orange:disabled { cursor:default; background-position: -34px right; }
-button.orange:disabled .wrap { background-position: -34px left; }
-button.orange:disabled span { background: none; }
+.buttons .orange.disabled .wrap { cursor:default; background-position: right -34px; }
+.buttons .orange.disabled .cap { background-position: left -34px; }
+.buttons .orange.disabled span { background: none; }
 
-button.orange-arrow .wrap { background-image: url('images/orange-button-with-arrow.png'); }
-button.orange-arrow span { margin-left: 28px; }
+.buttons .orange-arrow .cap { background-image: url('images/orange-button-with-arrow.png'); }
+.buttons .orange-arrow span { margin-left: 28px; }
 
