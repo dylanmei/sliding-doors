@@ -1,4 +1,36 @@
 
+.ribbon-wrap {
+  display: block;
+  height: 32px;
+  padding: 0 30px 0 0;
+  background: transparent url('images/ribbon-right.png') no-repeat right 0;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+}
+
+.ribbon-wrap .cap {
+  display: block;
+  height: 32px;
+  padding: 0 0 0 30px;
+  background: transparent url('images/ribbon-left.png') no-repeat 0 0;
+}
+
+.fortune-wrap {
+  display: block;
+  height: 35px;
+  background: transparent url('images/fortune-right.png') no-repeat right 0;
+  padding: 0 69px 0 0;
+  color: #666;
+  line-height: 30px;
+}
+
+.fortune-wrap .cap {
+  display: block;
+  height: 35px;
+  padding: 0 0 0 10px;
+  background: transparent url('images/fortune-left.png') no-repeat 0 0;
+}
 
 /* TEXTFIELDS
 
@@ -40,8 +72,8 @@
 .text-wrap.errors { background-position: right -128px; }
 .text-wrap.errors>span { background-position: 0 -128px; }
 .text-wrap.errors input { color: #300; }
-.text-wrap.errors input.watermark { color: #966; }
-.text-wrap.errors input::-webkit-input-placeholder { color: #966; }
+.text-wrap.errors input.watermark { color: #900; }
+.text-wrap.errors input::-webkit-input-placeholder { color: #900; }
 .text-wrap.errors:hover input.watermark { color: #633; }
 .text-wrap.errors:hover input::-webkit-input-placeholder { color: #633; }
 
@@ -125,7 +157,7 @@
 .select-wrap.errors:hover { background-position: right -256px; }
 .select-wrap.errors:hover span { background-position: 0 -256px; }
 .select-wrap.errors label { color: #300; }
-.select-wrap.errors label.watermark { color: #966; }
+.select-wrap.errors label.watermark { color: #900; }
 .select-wrap.errors:hover label.watermark { color: #633; }
 
 .select-wrap select {

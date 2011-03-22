@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Thoughtful</title>
+    <title>Sliding Doors</title>
     <link href="stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/sliding-doors.css" media="screen" rel="stylesheet" type="text/css" />
 <!--[if IE 7 ]>
@@ -13,10 +13,12 @@
 <![endif]-->
     <style type="text/css">
     body { background-color: #fff; margin: 20px; font-family: arial, helvetica, sans-serif; }
-    h1 { font-weight:normal; font-size: 140%; }
-    h2 { font-weight:normal; font-size: 120%; margin: 5px 0; }
-    fieldset { width: 350px; }
-    fieldset .field { margin-bottom: 10px; }
+    body .content { width: 350px; }
+    h1 { font-weight:normal; font-size: 110%; width: 220px; margin: 0 auto; }
+    h2 { font-weight:bolder; font-size: 100%; margin: 5px 0; }
+    form { margin: 20px 0; }
+    form fieldset { margin-bottom: 30px; }
+    form .field { margin-bottom: 10px; }
     </style>
     <script src="javascripts/jquery.js"></script>
     <script src="javascripts/jquery.watermark.js"></script>
@@ -24,6 +26,8 @@
     <script src="javascripts/sliding-doors.js"></script>
   </head>
   <body>
-	<%= yield %>
+    <div class="content">
+	    <%= yield %>
+    </div>
   </body>
 </html>
