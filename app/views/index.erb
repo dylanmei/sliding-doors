@@ -12,7 +12,7 @@
     <div class="field">
       <label for="textbox1">Normal</label>
       <div class="text-wrap">
-        <span>
+        <span class="cap">
           <input type="text" id="textbox1" />
         </span>
       </div>
@@ -21,7 +21,7 @@
     <div class="field">
       <label for="password1">Password</label>
       <div class="text-wrap">
-        <span>
+        <span class="cap">
           <input type="password" id="password1" />
         </span>
       </div>
@@ -30,7 +30,7 @@
     <div class="field">
       <label for="textbox2">With Errors</label>
       <div class="text-wrap">
-        <span>
+        <span class="cap">
           <input type="text" id="textbox2" class="field_with_errors" />
         </span>
       </div>
@@ -39,13 +39,13 @@
     <div class="field">
       <label for="textbox3">Disabled</label>
       <div class="text-wrap">
-        <span>
+        <span class="cap">
           <input type="text" id="textbox3" disabled="true" />
         </span>
       </div>
     </div>
-
   </fieldset>
+
   <fieldset>
     <h2 class="fortune-wrap">
       <span class="cap">Select boxes</span>
@@ -54,7 +54,7 @@
     <div class="field">
       <label for="selectbox1">Normal</label>
       <div class="select-wrap">
-        <span>
+        <span class="cap">
           <select id="selectbox1">
             <option value="">Select a gender</option>
             <option value="1">Male</option>
@@ -67,7 +67,7 @@
     <div class="field">
       <label for="selectbox2">Disabled</label>
       <div class="select-wrap">
-        <span>
+        <span class="cap">
           <select id="selectbox2" disabled>
             <option value="">Select a gender</option>
             <option value="1">Male</option>
@@ -80,7 +80,7 @@
     <div class="field">
       <label for="selectbox3">With Errors</label>
       <div class="select-wrap">
-        <span>
+        <span class="cap">
           <select id="selectbox3" class="field_with_errors">
             <option value="">Select a gender</option>
             <option value="1">Male</option>
@@ -90,36 +90,60 @@
       </div>
     </div>
   </fieldset>
+
   <fieldset>
     <h2 class="fortune-wrap">
       <span class="cap">Buttons</span>
     </h2>
 
-    <div class="buttons">
-      <button class="small orange button">
-        <div class="wrap">
-          <div class="cap">
-            <span>Sign up now!</span>
-          </div>
-        </div>
-      </button>
+    <button>
+      <div class="wrap">
+        <span class="cap">Normal</span>
+      </div>
+    </button>
 
-      <button class="small orange check button">
-        <div class="wrap">
-          <div class="cap">
-            <span>Save changes</span>
-          </div>
-        </div>
-      </button>
+    <button disabled>
+      <div class="wrap">
+        <span class="cap">Disabled</span>
+      </div>
+    </button>
 
-      <button class="small orange button" disabled="true">
-        <div class="wrap">
-          <div class="cap">
-            <span>Oh Snap!</span>
-          </div>
-        </div>
-      </button>
-    </div>
+    <button class="check">
+      <div class="wrap">
+        <span class="cap">Check</span>
+      </div>
+    </button>
+
+    <button class="check" disabled>
+      <div class="wrap">
+        <span class="cap">Check Disabled</span>
+      </div>
+    </button>
+
+    <button class="cross">
+      <div class="wrap">
+        <span class="cap">Cross</span>
+      </div>
+    </button>
+
+    <button class="cross" disabled>
+      <div class="wrap">
+        <span class="cap">Cross Disabled</span>
+      </div>
+    </button>
+
+    <button class="red">
+      <div class="wrap">
+        <span class="cap">Red</span>
+      </div>
+    </button>
+
+    <button class="red" disabled>
+      <div class="wrap">
+        <span class="cap">Red Disabled</span>
+      </div>
+    </button>
+
   </fieldset>
 </form>
 

@@ -44,7 +44,7 @@
   background: transparent url('images/text-cap.png') no-repeat right 0;
 }
 
-.text-wrap>span {
+.text-wrap .cap {
   display: block;
   height: 31px;
   line-height: 30px;
@@ -62,15 +62,15 @@
 .text-wrap:hover input::-webkit-input-placeholder { color: #333; }
 
 .text-wrap.active { background-position: right -64px; }
-.text-wrap.active>span { background-position: 0 -64px; }
+.text-wrap.active .cap { background-position: 0 -64px; }
 
 .text-wrap.disabled { background-position: right -96px; }
-.text-wrap.disabled>span { background-position: 0 -96px; }
+.text-wrap.disabled .cap { background-position: 0 -96px; }
 .text-wrap.disabled input.watermark { color: #999; }
 .text-wrap.disabled input::-webkit-input-placeholder { color: #ccc; }
 
 .text-wrap.errors { background-position: right -128px; }
-.text-wrap.errors>span { background-position: 0 -128px; }
+.text-wrap.errors .cap { background-position: 0 -128px; }
 .text-wrap.errors input { color: #300; }
 .text-wrap.errors input.watermark { color: #900; }
 .text-wrap.errors input::-webkit-input-placeholder { color: #900; }
@@ -139,26 +139,26 @@
 .select-wrap:hover label.watermark { color: #333; }
 
 .select-wrap:hover { background-position: right -32px; }
-.select-wrap:hover span { background-position: 0 -32px; }
+.select-wrap:hover .cap { background-position: 0 -32px; }
 
 .select-wrap.active { background-position: right -96px; }
-.select-wrap.active span { background-position: 0 -96px; }
+.select-wrap.active .cap { background-position: 0 -96px; }
 
 .select-wrap:hover.active { background-position: right -128px; }
-.select-wrap:hover.active span { background-position: 0 -128px; }
+.select-wrap:hover.active .cap { background-position: 0 -128px; }
 
 .select-wrap.disabled { background-position: right -192px; }
-.select-wrap.disabled span { background-position: 0 -192px; }
+.select-wrap.disabled .cap { background-position: 0 -192px; }
 .select-wrap.disabled label { color: #999; }
 .select-wrap.disabled:hover label { color: #999; }
 
 .select-wrap.errors { background-position: right -224px; }
-.select-wrap.errors span { background-position: 0 -224px; }
+.select-wrap.errors .cap { background-position: 0 -224px; }
 .select-wrap.errors:hover { background-position: right -256px; }
-.select-wrap.errors:hover span { background-position: 0 -256px; }
+.select-wrap.errors:hover .cap { background-position: 0 -256px; }
 .select-wrap.errors label { color: #300; }
 .select-wrap.errors label.watermark { color: #900; }
-.select-wrap.errors:hover label.watermark { color: #633; }
+.select-wrap.errors:hover label.watermark { color: #900; }
 
 .select-wrap select {
   position: absolute;
@@ -221,69 +221,59 @@
 
 */
 
-
-.buttons {
+button {
+  float: left;
+  font-size: 11px;
+  font-weight: bold;
   font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
-}
-
-.buttons .button {
-  /*float: left;*/
-  font: inherit;
-  color: white;
+  color: #333;
   margin: 0; padding: 0;
   border: none; outline: none;
   background: none;
   cursor: pointer;
   overflow: visible;
-  text-transform: lowercase;
-  width: 135px;
 }
 
-.buttons .small { width: 135px; }
-.buttons .large { width: 212px; }
-
-.buttons .button .wrap {
-  font-size: 12px;
-  height: 32px;
-  padding: 0 12px 0 0;
-  white-space: nowrap;
-  background: transparent url('images/orange-button-cap.png') no-repeat right top;
-}
-
-.buttons .button .cap {
-  height: 32px;
-  line-height: 30px;
-  padding: 0 0 0 12px;
-  text-align: center;
-  background: transparent url('images/orange-button.png') no-repeat left top;
-}
-
-.buttons .button span {
+button .wrap {
   display: block;
   height: 32px;
-  margin: 0 10px;
-  background: none;
+  padding: 0 5px 0 0;
+  white-space: nowrap;
+  background: transparent url('images/button-right.png') no-repeat right 0;
 }
 
-.buttons .button:active span {
-  background: transparent url('images/orange-button-tap.png') no-repeat center center;
+button .cap {
+  display: block;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 10px 0 15px;
+  background: transparent url('images/button-left.png') no-repeat 0 0;
 }
 
-.buttons .disabled .wrap { cursor: default; background-position: right -34px; }
-.buttons .disabled .cap { background-position: left -34px; }
-.buttons .disabled:active span { background: none; }
+button:hover { color: #000; }
+button:hover .wrap { background-position: right -34px; }
+button:hover .cap { background-position: 0 -34px; }
 
-.buttons .cart .cap { background-image: url('images/orange-button-with-cart.png'); }
-.buttons .check .cap { background-image: url('images/orange-button-with-check.png'); }
-.buttons .arrow .cap { background-image: url('images/orange-button-with-arrow.png'); }
-.buttons .cart span, .buttons .check span, .buttons .arrow span { margin-left: 24px; }
+button:active { color: #000; }
+button:active .wrap { background-position: right -68px; }
+button:active .cap { background-position: 0 -68px; }
 
-.buttons a { display: inline-block; } /* HACK */
-.buttons a, .buttons a:hover { text-decoration: none; }
+button:disabled { color: #666; cursor: default; }
+button:disabled .wrap { background-position: right -102px; }
+button:disabled .cap { background-position: 0 -102px; }
 
-.buttons .blank { color: #2a6b77; }
-.buttons .blank span { display: inline; }
-.buttons .blank:active span { background: none; }
-.buttons .blank:hover span { text-decoration: underline; }
-.buttons .blank .wrap { background: none; }
-.buttons .blank .wrap .cap { background: none; text-align: right; }
+.textshadow button { text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0; }
+.textshadow button:active { text-shadow: rgba(255, 255, 255, 0.75) 0 -1px 0; }
+
+button.check .cap { background-image: url('images/button-with-check.png'); padding-left: 25px; }
+button.cross .cap { background-image: url('images/button-with-cross.png'); padding-left: 25px; }
+
+button.red { color: #fff; }
+button.red .wrap { background-image: url('images/red-button-right.png') }
+button.red .cap { background-image: url('images/red-button-left.png') }
+
+button.red:disabled { color: #666; }
+
+.textshadow button.red { text-shadow: rgba(100, 0, 0, 0.75) 0 -1px 0; }
+.textshadow button.red:disabled { text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0; }
+
