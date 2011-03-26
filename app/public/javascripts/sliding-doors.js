@@ -105,17 +105,10 @@
     });
   };
 
-  var Button_Decorator = function(container) {
-    $('button', container).each(function() {
-        if ($(this).is(':disabled')) $(this).addClass('disabled');
-    })
-  };
-
   $(function() {
     $('form').each(function() {
       new Textbox_Decorator(this);
       new Selectbox_Decorator(this);
-      new Button_Decorator(this);
     });
   });
 

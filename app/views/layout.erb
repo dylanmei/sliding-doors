@@ -1,16 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
     <title>Sliding Doors</title>
     <link href="stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/sliding-doors.css" media="screen" rel="stylesheet" type="text/css" />
-<!--[if IE 7 ]>
-<link href="stylesheets/ie/7.css" media="screen" rel="stylesheet" type="text/css" />
-<![endif]-->
-<!--[if IE 8 ]>
-<link href="stylesheets/ie/8.css" media="screen" rel="stylesheet" type="text/css" />
-<![endif]-->
+    <!--[if IE 8]>
+    <link href="stylesheets/ie/8.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
     <style type="text/css">
     body { background-color: #fff; margin: 20px; font-family: arial, helvetica, sans-serif; }
     body .content { width: 350px; }
@@ -20,10 +17,18 @@
     form fieldset { margin-bottom: 30px; }
     form .field { margin-bottom: 10px; }
     </style>
-    <script src="javascripts/jquery.js"></script>
-    <script src="javascripts/jquery.watermark.js"></script>
-    <script src="javascripts/modernizr.js"></script>
-    <script src="javascripts/sliding-doors.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="javascripts/selectivizr.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.watermark.js"></script>
+    <script type="text/javascript" src="javascripts/sliding-doors.js"></script>
+    <script language="javascript">
+      $(function() {
+        $('form').submit(function(e) { e.preventDefault(); });
+      });
+    </script>
   </head>
   <body>
     <div class="content">

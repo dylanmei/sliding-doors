@@ -277,3 +277,4 @@ button.red:disabled { color: #666; }
 .textshadow button.red { text-shadow: rgba(100, 0, 0, 0.75) 0 -1px 0; }
 .textshadow button.red:disabled { text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0; }
 
+*:disabled { color: green; }
