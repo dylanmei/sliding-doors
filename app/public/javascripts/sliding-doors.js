@@ -65,20 +65,18 @@
     $('.text-wrap input', container).each(function() {
       if ($(this).data('textbox-behavior')) return;
 
-      var wrap = $(this).closest('.text-wrap');
-      if ($(this).is(':disabled')) wrap.addClass('disabled');
-      if ($(this).is('.field_with_errors')) wrap.addClass('errors');
+      var field = $(this).closest('.field');
 
       new Watermark_Behavior(this);
       $(this)
         .data('textbox-behavior', 1)
         .focus(function() {
           if ($(this).is(':disabled')) return;
-          wrap.addClass('active');
+          field.addClass('active');
         })
         .blur(function() {
           if ($(this).is(':disabled')) return;
-          wrap.removeClass('active');
+          field.removeClass('active');
         });
     });
   };
@@ -87,20 +85,18 @@
     $('.select-wrap select', container).each(function() {
       if($(this).data('selectbox-behavior')) return;
 
-      var wrap = $(this).closest('.select-wrap');
-      if ($(this).is(':disabled')) wrap.addClass('disabled');
-      if ($(this).is('.field_with_errors')) wrap.addClass('errors');
+      var field = $(this).closest('.field');
 
       new Watermark_Behavior(this);
       $(this)
         .data('selectbox-behavior', 1)
         .focus(function() {
           if ($(this).is(':disabled')) return;
-          wrap.addClass('active');
+          field.addClass('active');
         })
         .blur(function() {
           if ($(this).is(':disabled')) return;
-          wrap.removeClass('active');
+          field.removeClass('active');
         });
     });
   };
