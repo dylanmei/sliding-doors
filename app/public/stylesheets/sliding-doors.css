@@ -58,6 +58,9 @@
 .text-wrap input.watermark { color: #777; }
 .text-wrap input::-webkit-input-placeholder { color: #777; }
 
+.text-wrap:hover { background-position: right -32px; }
+.text-wrap:hover .cap { background-position: 0 -32px; }
+
 .text-wrap:hover input.watermark { color: #333; }
 .text-wrap:hover input::-webkit-input-placeholder { color: #333; }
 
@@ -92,6 +95,15 @@
 .touch .text-wrap input[type=text],
 .touch .text-wrap input[type=password] {
   -webkit-appearance: none;
+}
+
+.subtle .text-wrap {
+  padding-right: 34px;
+  background-image: url('images/subtle-textbox-right.png');
+}
+
+.subtle .text-wrap .cap {
+  background-image: url('images/subtle-textbox-left.png');
 }
 
 /* DEFINE FIXED WIDTHS FOR SPECIFIC TYPES
